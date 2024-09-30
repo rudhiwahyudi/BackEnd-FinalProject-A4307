@@ -1,0 +1,356 @@
+[
+  {
+    "ContainingType": "BEPeer.Controllers.FundingController",
+    "Method": "CreateFunding",
+    "RelativePath": "api/v1/funding/CreateFunding",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fundingDto",
+        "Type": "DAL.DTO.Req.ReqFundingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.FundingController",
+    "Method": "FundingList",
+    "RelativePath": "api/v1/funding/FundingList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lender_id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.RepaymentController",
+    "Method": "CreateRepayment",
+    "RelativePath": "api/v1/repayment/CreateRepayment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reqRepaymentDto",
+        "Type": "DAL.DTO.Req.ReqAddRepaymentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.RepaymentController",
+    "Method": "GetRepaymentsByBorrowerId",
+    "RelativePath": "api/v1/repayment/GetRepaymentsByBorrowerId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "borrower_id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.RepaymentController",
+    "Method": "UpdateRepayment",
+    "RelativePath": "api/v1/repayment/UpdateRepayment/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "reqRepaymentDto",
+        "Type": "DAL.DTO.Req.ReqUpdateRepaymentDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.LenderController",
+    "Method": "GetBalance",
+    "RelativePath": "rest/V1/Lander/GetBalance/{lenderId}/balance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lenderId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Decimal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.LenderController",
+    "Method": "GetLoanHistory",
+    "RelativePath": "rest/V1/Lander/GetLoanHistory/{lenderId}/history",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lenderId",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.LenderController",
+    "Method": "UpdateBalance",
+    "RelativePath": "rest/V1/Lander/UpdateBalance/{lenderId}/balance/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "lenderId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "reqUpdateBalanceRequest",
+        "Type": "DAL.DTO.Req.ReqUpdateBalanceRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.LenderController",
+    "Method": "UpdateLoanStatus",
+    "RelativePath": "rest/V1/Lander/UpdateLoanStatus/{loanId}/update-status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loanId",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "reqLoanUpdateDto",
+        "Type": "DAL.DTO.Req.ReqLoanUpdateDto",
+        "IsRequired": true
+      },
+      {
+        "Name": "lenderId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.LoanController",
+    "Method": "Delete",
+    "RelativePath": "rest/V1/Loan/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.LoanController",
+    "Method": "LoanList",
+    "RelativePath": "rest/V1/Loan/LoanList",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.LoanController",
+    "Method": "NewLoan",
+    "RelativePath": "rest/V1/Loan/NewLoan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loan",
+        "Type": "DAL.DTO.Req.ReqLoanDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.LoanController",
+    "Method": "UpdateLoan",
+    "RelativePath": "rest/V1/Loan/UpdateLoan",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "loan",
+        "Type": "DAL.DTO.Req.ReqLoanUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.UserController",
+    "Method": "AddUser",
+    "RelativePath": "rest/v1/user/AddUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "register",
+        "Type": "DAL.DTO.Req.ReqRegisterUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.UserController",
+    "Method": "Delete",
+    "RelativePath": "rest/v1/user/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.UserController",
+    "Method": "GetAllUsers",
+    "RelativePath": "rest/v1/user/GetAllUsers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.UserController",
+    "Method": "GetUserId",
+    "RelativePath": "rest/v1/user/GetUserId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "rest/v1/user/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginDto",
+        "Type": "DAL.DTO.Req.ReqLoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.UserController",
+    "Method": "Register",
+    "RelativePath": "rest/v1/user/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "register",
+        "Type": "DAL.DTO.Req.ReqRegisterUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BEPeer.Controllers.UserController",
+    "Method": "UpdatebyAdmin",
+    "RelativePath": "rest/v1/user/UpdatebyAdmin",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "reqUpdate",
+        "Type": "DAL.DTO.Req.ReqUpdateAdminDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

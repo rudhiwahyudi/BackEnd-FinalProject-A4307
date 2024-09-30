@@ -1,0 +1,6 @@
+@PeerLandingBackend_HostAddress = http://localhost:5034
+
+GET {{PeerLandingBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

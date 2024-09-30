@@ -1,0 +1,12 @@
+C:\Users\wahyu\source\repos\PeerLandingBackend\ClassLibrary1\bin\Debug\net8.0\BAL.deps.json
+C:\Users\wahyu\source\repos\PeerLandingBackend\ClassLibrary1\bin\Debug\net8.0\BAL.dll
+C:\Users\wahyu\source\repos\PeerLandingBackend\ClassLibrary1\bin\Debug\net8.0\BAL.pdb
+C:\Users\wahyu\source\repos\PeerLandingBackend\ClassLibrary1\obj\Debug\net8.0\BAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\wahyu\source\repos\PeerLandingBackend\ClassLibrary1\obj\Debug\net8.0\BAL.AssemblyInfoInputs.cache
+C:\Users\wahyu\source\repos\PeerLandingBackend\ClassLibrary1\obj\Debug\net8.0\BAL.AssemblyInfo.cs
+C:\Users\wahyu\source\repos\PeerLandingBackend\ClassLibrary1\obj\Debug\net8.0\BAL.csproj.CoreCompileInputs.cache
+C:\Users\wahyu\source\repos\PeerLandingBackend\ClassLibrary1\obj\Debug\net8.0\BAL.dll
+C:\Users\wahyu\source\repos\PeerLandingBackend\ClassLibrary1\obj\Debug\net8.0\refint\BAL.dll
+C:\Users\wahyu\source\repos\PeerLandingBackend\ClassLibrary1\obj\Debug\net8.0\BAL.pdb
+C:\Users\wahyu\source\repos\PeerLandingBackend\ClassLibrary1\obj\Debug\net8.0\ref\BAL.dll
+C:\Users\wahyu\source\repos\PeerLandingBackend\ClassLibrary1\obj\Debug\net8.0\BAL.sourcelink.json
